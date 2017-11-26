@@ -1,0 +1,49 @@
+.main-header {
+    margin: 31px 0;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.main-wrapper {
+    padding: 25px 0;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+span.help-block {
+    color: #545454;
+    margin: 5px 0;
+    display: block;
+}
+
+.validation-error {
+    padding: 5px 10px;
+}
+
+.result-list {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.result-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.freq {
+    color: #1327d0;
+    min-width: 35px;
+    display: inline-block;
+}
+
+.times {
+    color: #b1b0b0;
+}
+
+.card {
+    margin-bottom: 5px;
+}

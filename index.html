@@ -2,9 +2,82 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coin Change</title>
+	<!--Bootstrap CSS -->
+	<link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-$END$
+<body ng-app="MakeCoinChange" ng-controller="MakeCoinChangeController">
+<div class="container">
+	<div class="main-wrapper">
+		<div class="row text-center">
+			<div class="col-md-12">
+				<h1 class="main-header">Make Minimum Coins Change</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-md-3 col-md-6">
+				<form name="coinForm" ng-submit="makeChangeSubmit(coinForm.$valid)">
+					<div class="form-group">
+						<label for="currency-input">Enter number of Pennies</label>
+						<input name="currencyInput"
+						       class="form-control input-lg currency-input"
+						       id="currency-input" type="text"
+						       placeholder="Enter a sterling amount e.g £1.23, 123p"
+						       autofocus="" ng-model="currencyInput" required>
+						<span class="help-block">For example: £1.23, 123p</span>
+						<span
+							ng-show="coinForm.currencyInput.$invalid && !coinForm.currencyInput.$pristine"
+							class="alert alert-danger validation-error">Please enter amount.</span>
+						<div class="alert alert-danger validation-error" id="error-alert" ng-if="validationError">
+							{{validationError}}
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-md-3 col-md-6">
+				<div class="card" ng-if="result">
+					<div class="card-body">
+						<h4 class="card-title result-title">Coin Change</h4>
+
+						<ul class="result-list">
+							<li ng-repeat="(currency, freq) in result">
+								<span class="freq">{{freq}}</span>&nbsp;
+								<span class="times">x</span>&nbsp;
+								<span class="currency">{{currency}}</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-md-3 col-md-6">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title result-title">Usage</h4>
+						<p>Enter a Sterling amount (e.g. <strong>£1.23</strong>) and press Enter.</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- AngularJS -->
+<script src="vendor/js/angular.min.js"></script>
+
+<!-- Application specific -->
+<script src="src/validator.js"></script>
+<script src="src/currency-parser.js"></script>
+<script src="src/make-coin-change.js"></script>
+<script src="src/app.js"></script>
+
 </body>
 </html>

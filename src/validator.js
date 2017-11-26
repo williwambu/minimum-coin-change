@@ -21,7 +21,7 @@ var Validator = {
     //convert to lowercase, incase of capital P
     string = string.toLowerCase();
 
-    if(!string) {
+    if (!string) {
       validityObject.error = 'Empty string not allowed';
     }
     else if (this.checkInvalidCharacters(string)) {
@@ -33,7 +33,7 @@ var Validator = {
     else if (this.checkWrongPosition(string)) {
       validityObject.error = 'Current symbols in the wrong position';
     }
-    else{
+    else {
       //we are safe
       validityObject.valid = true;
     }
@@ -69,9 +69,14 @@ var Validator = {
    * @returns {boolean}
    */
   checkWrongPosition: function (string) {
-    var poundPosition = string.indexOf('£');
-    var pennyPosition  = string.indexOf('p');
+    if (string[0] === '£')
+      string = string.substring(1, string.length - 1); // remove £ if it is there
 
-    return poundPosition !== 0 && pennyPosition !== (string.length -1)
+    if (string[string.length - 1] === 'p') // remove p if it is there
+      string = string.substring(0, string.length - 1);
+
+    var validSymbols = /[£p]/g; // check if there are any more £ or p left
+
+    return validSymbols.test(string);
   }
 };
