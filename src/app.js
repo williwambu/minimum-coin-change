@@ -38,7 +38,7 @@ function makeCoinChangeController($scope, COINS) {
 
   /**
    * Process user input by calling makeChange and summarizeCoinChange functions
-   * assign results to $scope
+   * assign change to $scope
    * @param {string} userInput
    */
   function processInput(userInput) {

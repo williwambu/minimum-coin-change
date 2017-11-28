@@ -3,7 +3,6 @@
  * Calculate minimum number of coins needed to make the amount.
  */
 var MakeChange = {
-
   /**
    * Calculates minimum number of coins to form the amount
    * return an object where key is the number of pennies and value is the frequency

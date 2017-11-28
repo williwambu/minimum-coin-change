@@ -31,7 +31,7 @@ var Validator = {
       validityObject.error = 'Input contains no numbers';
     }
     else if (this.checkWrongPosition(string)) {
-      validityObject.error = 'Current symbols in the wrong position';
+      validityObject.error = 'Currency symbols in the wrong position';
     }
     else {
       //we are safe
