@@ -36,6 +36,9 @@ A **Dynamic Programming** approach is also included. It uses a **Recursion** app
             `-- angular.min.js
 
 ```
+### `README/`
+What you are reading now. :smiley:
+
 ### `index.html`
 Contains the HTML for the application
 
@@ -55,9 +58,6 @@ Mainly custom CSS for the application.
 
 ### `spec/`
 Contains application unit tests, as well as Jasmine Testing Framework source files.
-
-## `README/`
-What you are reading now. :smiley:
 
 ## Testing
 The `spec/` folder contains unit tests for the application. The unit tests have been written in [Jasmine](https://jasmine.github.io) Testing Framework.
