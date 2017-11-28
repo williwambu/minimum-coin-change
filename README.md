@@ -50,7 +50,7 @@ Mainly custom CSS for the application.
 ### `spec/`
 Contains application unit tests, as well as Jasmine Testing Framework source files.
 
-##Testing
+## Testing
 The `spec/` folder contains unit tests for the application. The unit tests have been written in [Jasmine](https://jasmine.github.io) Testing Framework.
 To run the tests, open `spec/SpecRunner.html` on a browser.
 
