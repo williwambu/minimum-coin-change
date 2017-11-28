@@ -30,7 +30,7 @@ A **Dynamic Programming** approach is also included. It uses a **Recursion** app
         -- js
             -- angular.min.js
 ```
-###`index.html`
+### `index.html`
 Contains the HTML for the application
 
 ### `src/`
@@ -41,13 +41,13 @@ Contains all Javascript code for various purposes
 * **make-coin-change.js** - Contains the functionality to calculate minimum number of coins for a the amount of pennies provided.
 * **validator.js** - Validates user input against requirements.
 
-###`vendor/`
+### `vendor/`
 Contains Bootstrap CSS and AngularJS source files.
 
-###`assets/`
+### `assets/`
 Mainly custom CSS for the application.
 
-###`spec/`
+### `spec/`
 Contains application unit tests, as well as Jasmine Testing Framework source files.
 
 ##Testing
