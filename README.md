@@ -14,21 +14,27 @@ A **Dynamic Programming** approach is also included. It uses a **Recursion** app
 ## Application Structure
 ```
   App
+    |-- README.md
     |-- assets
-    |  -- css
-    |      -- styles.css
     |-- index.html
+    |-- spec
+    |   |-- CurrencyParserSpec.js
+    |   |-- MakeCoinChangeSpec.js
+    |   |-- SpecRunner.html
+    |   |-- ValidatorSpec.js
+    |   `-- lib
     |-- src
     |   |-- app.js
     |   |-- currency-parser.js
     |   |-- dynamic-programming-solution.js
     |   |-- make-coin-change.js
-    |   -- validator.js
-     -- vendor
+    |   `-- validator.js
+    `-- vendor
         |-- css
-        |   -- bootstrap.min.css
-        -- js
-            -- angular.min.js
+        |   `-- bootstrap.min.css
+        `-- js
+            `-- angular.min.js
+
 ```
 ### `index.html`
 Contains the HTML for the application
