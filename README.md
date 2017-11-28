@@ -36,7 +36,7 @@ A **Dynamic Programming** approach is also included. It uses a **Recursion** app
             `-- angular.min.js
 
 ```
-### `README/`
+### `README.md`
 What you are reading now. :smiley:
 
 ### `index.html`
